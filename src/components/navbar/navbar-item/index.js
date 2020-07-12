@@ -1,15 +1,14 @@
 import React from "react";
 import { useQuery } from 'hooks';
-import './index.css';
+import './index.scss';
 
 const NavbarItem = ({ name }) => {
   const query = useQuery();
-  const sectionQuery = query.get('section') || '';
+  const sectionQuery = query.get('section') || 'home';
   const itemClass = name.toLowerCase().trim().split(' ').join('-');
-  const isActive = sectionQuery === itemClass;
-  const activeClass = isActive ? 'active' : '';
+  const activeClass = sectionQuery === itemClass ? 'active' : '';
   
-  return (<li className={activeClass}>{name}</li>);
+  return <li className={activeClass}>{name}</li>;
 };
 
 export default NavbarItem;

@@ -1,5 +1,5 @@
 import React from "react";
-import "./index.css";
+import "./index.scss";
 import config from "config";
 import NavbarItem from './navbar-item';
 
@@ -11,9 +11,9 @@ const Navbar = () => {
   };
 
   return (
-    <div>
-      Navigation Bar
-      <ul>{renderItems()}</ul>
+    <div className="navbar">
+      <div class="navbar__title">Logo</div>
+      <ul class="navbar__items">{renderItems()}</ul>
     </div>
   );
 };
