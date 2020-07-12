@@ -1,5 +1,7 @@
+@import 'assets/scss/_variables.scss';
+
 .active {
-  color: blue;
+  color: $primary-color;
 }
 
 li {

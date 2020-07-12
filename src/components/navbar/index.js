@@ -14,7 +14,7 @@ const Navbar = () => {
   return (
     <div className='navbar'>
       <div className='navbar__title'>
-        <Link to="/">Logo</Link>
+        <Link to='/'>Logo</Link>
       </div>
       <ul className='navbar__items'>{renderItems()}</ul>
     </div>
