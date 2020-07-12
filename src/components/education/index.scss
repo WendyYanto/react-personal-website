@@ -1,0 +1,12 @@
+@import 'assets/scss/_variables.scss';
+
+.education {
+  min-height: 70vh;
+  background-color: $text-secondary-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__title {
+    margin-bottom: 60px;
+  }
+}
