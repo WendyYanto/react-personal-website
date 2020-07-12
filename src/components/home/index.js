@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import config from "config";
 import Button from "components/commons/button";
 import { withRouter } from "react-router-dom";

@@ -2,12 +2,13 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { useQuery } from 'hooks'
 import { withRouter } from 'react-router-dom'
+import { formatToKebabCase } from 'utils'
 import './index.scss'
 
 const NavbarItem = ({ name, history }) => {
   const query = useQuery()
   const sectionQuery = query.get('section') || 'home'
-  const section = name.toLowerCase().trim().split(' ').join('-')
+  const section = formatToKebabCase(name)
   const activeClass = sectionQuery === section ? 'active' : ''
 
   const handleClick = () => {

@@ -18,5 +18,9 @@
     "react": {
       "version": "latest" // "detect" automatically picks the version you have installed.
     }
+  }, 
+  "env": {
+    "browser": true,
+    "node": true
   }
 }
