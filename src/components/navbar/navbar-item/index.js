@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from 'prop-types';
 import { useQuery } from 'hooks';
 import './index.scss';
 
@@ -11,4 +12,7 @@ const NavbarItem = ({ name }) => {
   return <li className={activeClass}>{name}</li>;
 };
 
+NavbarItem.propTypes = {
+  name: PropTypes.string
+}
 export default NavbarItem;

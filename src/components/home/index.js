@@ -7,7 +7,7 @@ const USERNAME = config.username;
 const Home = () => {
   return (
     <div className="section home">
-      <h1>I'm {USERNAME}</h1>
+      <h1>I&apos;m {USERNAME}</h1>
       <p>Android & Full Stack Developer</p>
     </div>
   );

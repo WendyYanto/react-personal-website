@@ -7,13 +7,13 @@ const ITEMS = config.navbar_items;
 
 const Navbar = () => {
   const renderItems = () => {
-    return ITEMS.map((item) => <NavbarItem name={item} />);
+    return ITEMS.map((item) => <NavbarItem name={item} key={item}/>);
   };
 
   return (
     <div className="navbar">
-      <div class="navbar__title">Logo</div>
-      <ul class="navbar__items">{renderItems()}</ul>
+      <div className="navbar__title">Logo</div>
+      <ul className="navbar__items">{renderItems()}</ul>
     </div>
   );
 };
