@@ -1,0 +1,22 @@
+@import 'assets/scss/_variables.scss';
+
+.about-me {
+  min-height: 70vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  &__description {
+    flex-wrap: wrap;
+    max-width: 40vw;
+    text-align: left;
+    p {
+      word-wrap: break-word;
+    }
+    .description-action {
+      display: flex;
+      justify-content: space-between;
+      max-width: 350px;
+    }
+  }
+}
