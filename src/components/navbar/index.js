@@ -2,6 +2,7 @@ import React from 'react'
 import './index.scss'
 import config from 'config'
 import NavbarItem from './navbar-item'
+import { Link } from 'react-router-dom'
 
 const ITEMS = config.navbar_items
 
@@ -12,7 +13,9 @@ const Navbar = () => {
 
   return (
     <div className='navbar'>
-      <div className='navbar__title'>Logo</div>
+      <div className='navbar__title'>
+        <Link to="/">Logo</Link>
+      </div>
       <ul className='navbar__items'>{renderItems()}</ul>
     </div>
   )

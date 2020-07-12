@@ -7,12 +7,12 @@ import './index.scss'
 const NavbarItem = ({ name, history }) => {
   const query = useQuery()
   const sectionQuery = query.get('section') || 'home'
-  const itemClass = name.toLowerCase().trim().split(' ').join('-')
-  const activeClass = sectionQuery === itemClass ? 'active' : ''
+  const section = name.toLowerCase().trim().split(' ').join('-')
+  const activeClass = sectionQuery === section ? 'active' : ''
 
   const handleClick = () => {
     history.push({
-      search: `section=${itemClass}`
+      search: `section=${section}`
     })
   }
 
