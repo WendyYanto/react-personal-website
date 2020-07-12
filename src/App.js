@@ -1,17 +1,17 @@
-import React from "react";
-import Navbar from "components/navbar";
-import Footer from "components/footer";
-import Home from "components/home";
-import "./App.css";
+import React from 'react'
+import Navbar from 'components/navbar'
+import Footer from 'components/footer'
+import Home from 'components/home'
+import './App.css'
 
 const App = () => {
   return (
-    <div className="App">
+    <div className='App'>
       <Navbar />
       <Home />
       <Footer />
     </div>
-  );
-};
+  )
+}
 
-export default App;
+export default App

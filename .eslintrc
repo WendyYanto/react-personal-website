@@ -1,5 +1,5 @@
 {
-  "extends": ["eslint:recommended", "plugin:react/recommended"],
+  "extends": ["eslint:recommended", "standard-react"],
   "globals": {},
   "parser": "babel-eslint",
   "parserOptions": {
@@ -11,7 +11,9 @@
   },
   "plugins": ["react", "import", "react-hooks"],
   "ignorePatterns": ["node_modules/", "src/index.js", "src/serviceWorker.js"],
-  "rules": {},
+  "rules": {
+    "react/prop-types": ["error", { "ignore": ["navigation", "history"] }]
+  },
   "settings": {
     "react": {
       "version": "latest" // "detect" automatically picks the version you have installed.
