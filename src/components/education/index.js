@@ -8,15 +8,15 @@ const EDUCATIONS = config.educations;
 
 const Education = () => {
   const renderItems = () => (
-    EDUCATIONS.map(item => 
-      <EducationItem item={item} key={item.agency} />
+    EDUCATIONS.map((item, index) => 
+      <EducationItem item={item} index={++index} key={item.agency} />
     )
   )
 
   return (
     <div className='section education'>
       <h1 className='education__title'>Education</h1>
-      <div className='items'>
+      <div className='education__items'>
         {renderItems()}
       </div>
     </div>

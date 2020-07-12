@@ -2,7 +2,7 @@ import React from 'react'
 import './index.css'
 
 const Footer = () => (
-  <div className='footer'>Footer</div>
+  <div className='section footer'>Footer</div>
 )
 
 export default Footer

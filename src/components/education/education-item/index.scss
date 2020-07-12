@@ -5,6 +5,40 @@ h3,p {
 }
 
 .education-item {
+  box-sizing: border-box;
+  border: none;
+  max-width: 400px;
+  padding: 0 30px 40px 30px;
+  position: relative;
+  white-space: pre-line;
+
+  .dot {
+    position: absolute;
+    background-color: $primary-color;
+    margin: 0;
+    padding: 0;
+    height: 16px;
+    width: 16px;
+    top: 0;
+    border-radius: 50%;
+  }
+}
+
+.left {
+  border-left: 2px solid $primary-color;
   text-align: left;
-  padding-bottom: 20px;
+
+  .dot {
+    left: -10px;
+  }
+}
+
+.right {
+  border-right: 2px solid $primary-color;
+  transform: translateX(-388px);
+  text-align: right;
+
+  .dot {
+    right: -10px;
+  }
 }
