@@ -13,15 +13,19 @@ const NavbarItem = ({ name, history }) => {
 
   const handleClick = () => {
     history.push({
-      search: `section=${section}`
+      search: `section=${section}`,
     })
   }
 
-  return <li className={activeClass} onClick={handleClick}>{name}</li>
+  return (
+    <li className={activeClass} onClick={handleClick}>
+      {name}
+    </li>
+  )
 }
 
 NavbarItem.propTypes = {
-  name: PropTypes.string
+  name: PropTypes.string,
 }
 
 export default withRouter(NavbarItem)

@@ -1,24 +1,23 @@
-import React from 'react';
-import { withRouter } from "react-router-dom";
-import config from 'config';
-import Button from 'components/commons/button';
+import React from 'react'
+import { withRouter } from 'react-router-dom'
+import config from 'config'
+import Button from 'components/commons/button'
 
-import './index.scss';
+import './index.scss'
 
-const DESCRIPTION = config.description;
+const DESCRIPTION = config.description
 
 const AboutMe = ({ history }) => {
-
   const goToPortfolio = () => {
     history.push({
       search: `section=portfolio`,
-    });
+    })
   }
 
   const downloadCV = () => {
     history.push({
       search: `section=contact`,
-    });
+    })
   }
 
   return (
@@ -35,6 +34,6 @@ const AboutMe = ({ history }) => {
       </div>
     </div>
   )
-};
+}
 
-export default withRouter(AboutMe);
+export default withRouter(AboutMe)

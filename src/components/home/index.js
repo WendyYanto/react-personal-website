@@ -1,19 +1,19 @@
-import React from 'react';
-import config from "config";
-import Button from "components/commons/button";
-import { withRouter } from "react-router-dom";
+import React from 'react'
+import config from 'config'
+import Button from 'components/commons/button'
+import { withRouter } from 'react-router-dom'
 
-import "./index.scss";
+import './index.scss'
 
-const USERNAME = config.username;
-const ROLE = config.role;
+const USERNAME = config.username
+const ROLE = config.role
 
 const Home = ({ history }) => {
   const goToContact = () => {
     history.push({
       search: `section=contact`,
-    });
-  };
+    })
+  }
 
   return (
     <div className='section home'>
@@ -24,7 +24,7 @@ const Home = ({ history }) => {
       </div>
       <div className='image' />
     </div>
-  );
-};
+  )
+}
 
-export default withRouter(Home);
+export default withRouter(Home)
