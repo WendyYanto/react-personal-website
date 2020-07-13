@@ -12,7 +12,7 @@ const Navbar = () => {
   }
 
   return (
-    <div className='navbar'>
+    <div className='navbar home'>
       <div className='navbar__title'>
         <Link to='/'>Logo</Link>
       </div>

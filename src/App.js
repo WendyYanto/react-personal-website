@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import Navbar from 'components/navbar'
 import Footer from 'components/footer'
-import Home from 'components/home'
+import Header from 'components/header'
 import AboutMe from 'components/about-me'
 import Education from 'components/education'
 import { useQuery } from 'hooks'
@@ -24,7 +24,7 @@ const App = () => {
   return (
     <div className='App'>
       <Navbar />
-      <Home />
+      <Header />
       <AboutMe />
       <Education />
       <Footer />

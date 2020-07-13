@@ -5,7 +5,7 @@ h1, h3 {
   margin: 0;
 }
 
-.home {
+.header {
   background-color: $text-secondary-color;
   min-height: 70vh;
   display: flex;
@@ -14,7 +14,7 @@ h1, h3 {
   @include mobile {
     flex-direction: column;
   }
-  .description {
+  &__description {
     text-align: left;
     h1 {
       font-size: 3rem;
