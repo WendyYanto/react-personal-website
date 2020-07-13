@@ -1,13 +1,14 @@
-import React, { useEffect } from 'react'
-import Navbar from 'components/navbar'
-import Footer from 'components/footer'
-import Header from 'components/header'
-import AboutMe from 'components/about-me'
-import Education from 'components/education'
+import React, { useEffect, Suspense, lazy } from 'react'
 import { useQuery } from 'hooks'
 import { formatToKebabCase } from 'utils'
 
 import './App.scss'
+
+const Navbar = lazy(() => import(/* webpackChunkName: "navbar" */'components/navbar'))
+const Footer = lazy(() => import(/* webpackChunkName: "footer" */'components/footer'))
+const Header = lazy(() => import(/* webpackChunkName: "header" */'components/header'))
+const AboutMe = lazy(() => import(/* webpackChunkName: "about-me" */'components/about-me'))
+const Education = lazy(() => import(/* webpackChunkName: "education" */'components/education'))
 
 const App = () => {
   const query = useQuery()
@@ -23,11 +24,21 @@ const App = () => {
 
   return (
     <div className='App'>
-      <Navbar />
-      <Header />
-      <AboutMe />
-      <Education />
-      <Footer />
+      <Suspense fallback={<div>Loading</div>}>
+        <Navbar />
+      </Suspense>
+      <Suspense fallback={<div>Loading</div>}>
+        <Header />
+      </Suspense>
+      <Suspense fallback={<div>Loading</div>}>
+        <AboutMe />
+      </Suspense>
+      <Suspense fallback={<div>Loading</div>}>
+        <Education />
+      </Suspense>
+      <Suspense fallback={<div>Loading</div>}>
+        <Footer />
+      </Suspense>
     </div>
   )
 }
