@@ -1,4 +1,5 @@
 @import 'assets/scss/_variables.scss';
+@import 'assets/scss/_responsive.scss';
 
 h3,p {
   margin: 0
@@ -11,6 +12,9 @@ h3,p {
   padding: 0 30px 40px 30px;
   position: relative;
   white-space: pre-line;
+  @include tablet {
+    max-width: 250px;
+  }
 
   .dot {
     position: absolute;
@@ -37,6 +41,9 @@ h3,p {
   border-right: 2px solid $primary-color;
   transform: translateX(-388px);
   text-align: right;
+  @include tablet {
+    transform: translateX(-250px);
+  }
 
   .dot {
     right: -10px;
