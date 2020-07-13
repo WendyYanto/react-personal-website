@@ -1,7 +1,12 @@
+@import 'assets/scss/_responsive.scss';
+
 .navbar {
   display: flex;
   justify-content: space-between;
   padding: 0 150px;
+  @include tablet {
+    padding: 0 16px;
+  }
   &__title {
     padding: 16px;
   }
@@ -12,5 +17,8 @@
     min-width: 550px;
     padding: 16px;
     margin: 0;
+    @include tablet {
+      display: none;
+    }
   }
 }

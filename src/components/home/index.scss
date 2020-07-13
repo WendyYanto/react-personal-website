@@ -1,4 +1,5 @@
 @import 'assets/scss/_variables';
+@import 'assets/scss/_responsive';
 
 h1, h3 {
   margin: 0;
@@ -10,6 +11,9 @@ h1, h3 {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  @include mobile {
+    flex-direction: column;
+  }
   .description {
     text-align: left;
     h1 {
