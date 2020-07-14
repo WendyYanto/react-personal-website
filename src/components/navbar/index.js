@@ -1,9 +1,10 @@
-import React from 'react'
-import './index.scss'
+import React, { lazy } from 'react'
 import config from 'config'
-import NavbarItem from './navbar-item'
 import { Link } from 'react-router-dom'
 
+import './index.scss'
+
+const NavbarItem = lazy(() => import(/* webpackChunkName: "navbar-item" */'./navbar-item'))
 const ITEMS = config.navbar_items
 
 const Navbar = () => {
