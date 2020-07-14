@@ -1,10 +1,10 @@
-import React from 'react'
+import React, { lazy } from 'react'
 import { withRouter } from 'react-router-dom'
 import config from 'config'
-import Button from 'components/commons/button'
 
 import './index.scss'
 
+const Button = lazy(() => import(/* webpackChunkName: "button" */'components/commons/button')) 
 const DESCRIPTION = config.description
 
 const AboutMe = ({ history }) => {
