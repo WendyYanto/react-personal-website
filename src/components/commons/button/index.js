@@ -1,6 +1,6 @@
 import React from 'react'
 import './index.scss'
-import PropTypes from 'prop-types'
+import { string, func, bool } from 'prop-types'
 
 const Button = ({ onClick, text, secondary }) => {
   const secondaryClass = secondary ? 'secondary' : 'primary'
@@ -13,9 +13,9 @@ const Button = ({ onClick, text, secondary }) => {
 }
 
 Button.propTypes = {
-  text: PropTypes.string.isRequired,
-  onClick: PropTypes.func.isRequired,
-  secondary: PropTypes.bool,
+  text: string.isRequired,
+  onClick: func.isRequired,
+  secondary: bool,
 }
 
 Button.defaultProps = {

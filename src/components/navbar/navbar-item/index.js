@@ -1,5 +1,5 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+import { string } from 'prop-types'
 import { useQuery } from 'hooks'
 import { withRouter } from 'react-router-dom'
 import { formatToKebabCase } from 'utils'
@@ -25,7 +25,7 @@ const NavbarItem = ({ name, history }) => {
 }
 
 NavbarItem.propTypes = {
-  name: PropTypes.string,
+  name: string,
 }
 
 export default withRouter(NavbarItem)

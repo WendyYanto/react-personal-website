@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { object, number } from 'prop-types'
 
 import './index.scss';
 
@@ -19,8 +19,8 @@ const EducationItem = ({ item, index }) => {
 }
 
 EducationItem.propTypes = {
-  item: PropTypes.object.isRequired,
-  index: PropTypes.number.isRequired
+  item: object.isRequired,
+  index: number.isRequired
 };
 
 export default EducationItem;
