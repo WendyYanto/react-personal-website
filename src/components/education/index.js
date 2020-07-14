@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { lazy } from 'react'
 import config from 'config'
-import EducationItem from './education-item'
 
 import './index.scss'
 
+const EducationItem = lazy(() => import(/* webpackChunkName: "education-item" */'./education-item'))
 const EDUCATIONS = config.educations
 
 const Education = () => {
