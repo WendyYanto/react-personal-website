@@ -25,7 +25,7 @@ const NavbarItem = ({ name, history }) => {
 }
 
 NavbarItem.propTypes = {
-  name: string,
+  name: string
 }
 
 export default withRouter(NavbarItem)
