@@ -1,11 +1,10 @@
 import React from 'react';
 import { object, number } from 'prop-types'
-import { isMobileOnly } from 'react-device-detect';
-
+import withResponsive from 'hocs/with-responsive'
 import './index.scss';
 
-const EducationItem = ({ item, index }) => {
-  const direction = index % 2 === 0 && !isMobileOnly ? 'right' : 'left';
+const EducationItem = ({ item, index, isMobile }) => {
+  const direction = index % 2 === 0 && !isMobile ? 'right' : 'left';
   const className = `education-item ${direction}`;
 
   return (
@@ -24,4 +23,4 @@ EducationItem.propTypes = {
   index: number.isRequired
 };
 
-export default EducationItem;
+export default withResponsive(EducationItem);
