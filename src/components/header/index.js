@@ -19,7 +19,7 @@ const Header = ({ history }) => {
     <div className='section header'>
       <div className='header__description'>
         <h1>I'm {USERNAME}</h1>
-        <h3>{ROLE}</h3>
+        <p>{ROLE}</p>
         <Button text='Contact Me' onClick={goToContact} />
       </div>
       <div className='header__image' />

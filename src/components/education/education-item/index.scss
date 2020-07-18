@@ -29,23 +29,23 @@ h3,p {
 }
 
 .left {
-  border-left: 2px solid $primary-color;
+  border-left: 1px solid $primary-color;
   text-align: left;
 
   .dot {
-    left: -10px;
+    left: -8.5px;
   }
 }
 
 .right {
-  border-right: 2px solid $primary-color;
-  transform: translateX(-388px);
+  border-right: 1px solid $primary-color;
+  transform: translateX(-389px);
   text-align: right;
   @include tablet {
     transform: translateX(-250px);
   }
 
   .dot {
-    right: -10px;
+    right: -8.5px;
   }
 }
