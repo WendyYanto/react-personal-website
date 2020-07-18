@@ -1,5 +1,5 @@
 import React from 'react';
-import { object, number } from 'prop-types'
+import { object, number, bool } from 'prop-types'
 import withResponsive from 'hocs/with-responsive'
 import './index.scss';
 
@@ -20,7 +20,8 @@ const EducationItem = ({ item, index, isMobile }) => {
 
 EducationItem.propTypes = {
   item: object.isRequired,
-  index: number.isRequired
+  index: number.isRequired,
+  isMobile: bool.isRequired
 };
 
 export default withResponsive(EducationItem);

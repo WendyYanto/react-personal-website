@@ -8,7 +8,7 @@ const ITEMS = config.skills
 const Skills = () => {
 
   const renderItems = () => {
-    return ITEMS.map(item => <SkillItem item={item} />)
+    return ITEMS.map(item => <SkillItem item={item} key={item.title} />)
   }
 
   return (
