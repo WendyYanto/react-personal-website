@@ -1,0 +1,43 @@
+@import 'assets/scss/_variables';
+@import 'assets/scss/_responsive';
+
+.skill-item {
+  box-sizing: border-box;
+  padding: 16px;
+  position: relative;
+  margin-bottom: 0;
+  max-width: calc(100% / 2);
+  min-width: calc(100% / 2);
+
+  @include mobile {
+    max-width: 100%;
+    min-width: 100%;
+  }
+
+  &__title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+  }
+
+  &__bar {
+    position: relative;
+    .content {
+      background-color: $primary-color;
+      z-index: 1;
+    }
+    &::after {
+      z-index: 0;
+      background-color: #E7EBF2;
+      width: 100%;
+      content: '';
+    }
+    .content, &::after {
+      top: 0;
+      left: 0;
+      position: absolute;
+      display: block;
+      height: 12px;
+    }
+  }
+}

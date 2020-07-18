@@ -10,6 +10,7 @@ const Header = lazy(() => import(/* webpackChunkName: "header" */'components/hea
 const AboutMe = lazy(() => import(/* webpackChunkName: "about-me" */'components/about-me'))
 const Education = lazy(() => import(/* webpackChunkName: "education" */'components/education'))
 const Portfolio = lazy(() => import(/* webpackChunkName: "porfolio" */'components/portfolio'))
+const Skill = lazy(() => import(/* webpackChunkName: "skill" */'components/skill'))
 
 const App = () => {
   const query = useQuery()
@@ -39,6 +40,9 @@ const App = () => {
       </Suspense>
       <Suspense fallback={<div>Loading</div>}>
         <Portfolio />
+      </Suspense>
+      <Suspense fallback={<div>Loading</div>}>
+        <Skill />
       </Suspense>
       <Suspense fallback={<div>Loading</div>}>
         <Footer />

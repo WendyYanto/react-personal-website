@@ -75,5 +75,31 @@ export default {
       platform: 'MOBILE',
       description: 'An interceptor that implements mock API response for android to increase android developer productivity during sprint development'
     }
+  ],
+  skills: [
+    {
+      title: 'Android',
+      value: '85'
+    },
+    {
+      title: 'Java',
+      value: '85'
+    },
+    {
+      title: 'Kotlin',
+      value: '85'
+    },
+    {
+      title: 'Vue',
+      value: '85'
+    },
+    {
+      title: 'Spring',
+      value: '85'
+    },
+    {
+      title: 'Python',
+      value: '75'
+    }
   ]
 }

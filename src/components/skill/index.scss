@@ -1,0 +1,39 @@
+@import 'assets/scss/_variables';
+@import 'assets/scss/_responsive';
+
+.skills {
+  min-height: 50vh;
+  padding: 100px;
+  @include mobile {
+    padding: 16px;
+  }
+
+  &__title {
+    position: relative;
+    &::after {
+      position: absolute;
+      content: '';
+      display: block;
+      width: 75px;
+      height: 4px;
+      background-color: $primary-color;
+      bottom: -10px;
+      transform: translateX(-50%);
+      left: 50%;
+    }
+  }
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    min-height: 200px;
+    margin: 40px 0;
+    @include mobile {
+      align-content: center;
+      align-items: center;
+    }
+  }
+}
