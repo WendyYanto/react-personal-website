@@ -20,6 +20,9 @@ h1, p {
       font-size: 3rem;
       margin-bottom: 10px;
       font-weight: bolder;
+      @include mobile {
+        font-size: 2rem;
+      }
     }
     p {
       margin-bottom: 30px;

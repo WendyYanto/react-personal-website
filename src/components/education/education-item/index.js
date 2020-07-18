@@ -1,10 +1,11 @@
 import React from 'react';
 import { object, number } from 'prop-types'
+import { isMobileOnly } from 'react-device-detect';
 
 import './index.scss';
 
 const EducationItem = ({ item, index }) => {
-  const direction = index % 2 === 0 ? 'right' : 'left';
+  const direction = index % 2 === 0 && !isMobileOnly ? 'right' : 'left';
   const className = `education-item ${direction}`;
 
   return (

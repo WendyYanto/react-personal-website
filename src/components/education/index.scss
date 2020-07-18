@@ -30,5 +30,8 @@
       margin-top: -50px;
       transform: translateX(125px);
     }
+    @include mobile {
+      transform: translateX(0);
+    }
   }
 }
