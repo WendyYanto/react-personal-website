@@ -5,14 +5,14 @@ import './index.scss'
 
 const PortfolioItem = ({ item }) => {
   return (
-    <div className="item">
-      <h4 className="item__title">
-        { item.title }
+    <div className='item'>
+      <h4 className='item__title'>
+        {item.title}
         &nbsp;&#183;&nbsp;
-        { item.year }
+        {item.year}
       </h4>
-      <p className="item__description">
-        { item.description }
+      <p className='item__description'>
+        {item.description}
       </p>
     </div>
   )

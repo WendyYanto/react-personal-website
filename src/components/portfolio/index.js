@@ -34,12 +34,12 @@ const Portfolio = () => {
   }
 
   return (
-    <div className="section portfolio">
-      <h1 className="portfolio__title">Portfolio</h1>
-      <div className="portfolio__items">
-        { renderItems() }
+    <div className='section portfolio'>
+      <h1 className='portfolio__title'>Portfolio</h1>
+      <div className='portfolio__items'>
+        {renderItems()}
       </div>
-      <div className="portfolio__action">
+      <div className='portfolio__action'>
         <Button text={buttonText} onClick={toggleSeeMore} />
       </div>
     </div>
