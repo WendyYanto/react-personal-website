@@ -26,4 +26,53 @@ export default {
       notes: 'Second Honors of SMA 3',
     },
   ],
+  portfolios: [
+    {
+      title: 'BNCC School Management System',
+      platform: 'WEB',
+      year: '2018',
+      description: 'A school management system as CSR project from my previous organization that helps teacher to organise student’s information and data. It helps teacher to have integrated student’s data without relying on excel. It is developed using Laravel 5.4 and Bootstrap.'
+    },
+    {
+      title: 'BNCC Hackathon Website',
+      platform: 'WEB',
+      year: '2018',
+      description: 'A website for information and registration for participants of a hackathon hosted in Tokopedia Tower with features of multiple user authentication and team creation using unique code generated from system. It is developed using Laravel 5.4 and Bootstrap'
+    },
+    {
+      title: 'KSI Indonesia Company Profile',
+      platform: 'WEB',
+      year: '2018',
+      description: 'It is an CMS and company profile website for KSI Indonesia in 10 days.  It is developed using Laravel 5.4 and Bootstrap.'
+    },
+    {
+      title: 'Blibli Seller Android App',
+      platform: 'MOBILE',
+      year: '2019',
+      description: 'I contributed in developing a few core features in Blibli Seller App such as create products, image gallery, integrate Sonar for static code quality checking and bug fixing. Technology used: Kotlin and Java.'
+    },
+    {
+      title: 'Blibli Seller API Open Platform',
+      platform: 'WEB',
+      year: '2019',
+      description: 'I contributed in developing Partner Integration Web Application from scratch. It is an open API platform of Blibli Seller API (merchant-api.blibli.com) to merchant developer. It is developed using Java Spring Web Flux (Reactive Programming) as backend and Vue.js as frontend with full covered unit test using Jest, Junit and Mockito.'
+    },
+    {
+      title: 'Android Image Picker Library',
+      year: '2019',
+      platform: 'MOBILE',
+      description: 'Image gallery library by using coroutine to help user to choose image (single or multi) from android device without usage of android gallery intent'
+    },
+    {
+      title: 'Android TicTacToe',
+      year: '2020',
+      platform: 'MOBILE',
+      description: 'A TicTacToe game that is implemented using android custom view'
+    },
+    {
+      title: 'Android Mock API Interceptor',
+      platform: '2020',
+      description: 'An interceptor that implements mock API response for android to increase android developer productivity during sprint development'
+    }
+  ]
 }

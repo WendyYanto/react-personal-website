@@ -1,0 +1,31 @@
+@import 'assets/scss/_responsive';
+@import 'assets/scss/_variables';
+
+.item {
+  padding: 16px;
+  margin-bottom: 24px;
+  border: 2px solid #E5EAFE;
+  max-width: calc(100% / 4);
+  min-width: calc(100% / 4);
+  min-height: 400px;
+  cursor: pointer;
+  transition: all .3s ease;
+
+  &:hover {
+    box-shadow: 0 0 15px 2px #D2F1FF;
+  }
+
+  @include mobile {
+    max-width: 100%;
+    min-width: 100%;
+  }
+
+  &__description {
+    word-break: break-word;
+    @include mobile {
+      text-align: justify;
+      padding-bottom: 0;
+    }
+  }
+
+}

@@ -1,0 +1,20 @@
+@import 'assets/scss/_variables';
+
+.portfolio {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  &__title {
+    margin-top: 50px;
+  }
+  &__items {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    min-height: 200px;
+    margin: 40px 0;
+  }
+}
