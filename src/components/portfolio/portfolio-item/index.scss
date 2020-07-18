@@ -16,12 +16,22 @@
   }
 
   @include mobile {
-    max-width: 100%;
-    min-width: 100%;
+    max-width: 90%;
+    min-width: 90%;
+  }
+
+  &__icon {
+    margin-top: 20px;
+    img {
+      max-width: 50px;
+      max-height: 50px;
+    }
   }
 
   &__description {
     word-break: break-word;
+    white-space: pre-line;
+    font-weight: 100;
     @include mobile {
       text-align: justify;
       padding-bottom: 0;

@@ -1,11 +1,19 @@
 import React from 'react'
 import { object } from 'prop-types'
 
+import WEB from 'assets/icon/web.png'
+import MOBILE from 'assets/icon/mobile.png'
+
 import './index.scss'
 
 const PortfolioItem = ({ item }) => {
+  const image = item.platform === 'WEB' ? WEB : MOBILE
+
   return (
     <div className='item'>
+      <div className='item__icon'>
+        <img src={image} />
+      </div>
       <h4 className='item__title'>
         {item.title}
         &nbsp;&#183;&nbsp;

@@ -27,7 +27,7 @@ const Portfolio = () => {
   const toggleSeeMore = () => {
     const data = !isExpand ? PORTFOLIOS : firstThreeItems
     const text = !isExpand ? COLLAPSE  : EXPAND
-    
+
     setExpand(!isExpand)
     setItems([...data])
     setButtonText(text)

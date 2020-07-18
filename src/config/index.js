@@ -71,7 +71,8 @@ export default {
     },
     {
       title: 'Android Mock API Interceptor',
-      platform: '2020',
+      year: '2020',
+      platform: 'MOBILE',
       description: 'An interceptor that implements mock API response for android to increase android developer productivity during sprint development'
     }
   ]
