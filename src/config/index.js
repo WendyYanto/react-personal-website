@@ -17,7 +17,7 @@ export default {
       agency: 'BINUS University',
       duration: '2016-2020',
       major: 'Computer Science - Artificial Intelligence',
-      notes: 'GPA: 3.6',
+      notes: 'GPA: 3.86',
     },
     {
       agency: 'SMA Mondial Batam',
