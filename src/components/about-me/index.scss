@@ -9,6 +9,40 @@
   @include mobile {
     flex-direction: column;
   }
+  &__title {
+    position: relative;
+    img {
+      position: absolute;
+      height: auto;
+      max-width: 300px;
+      top: -100px;
+      left: -100px;
+      z-index: -5;
+      @include mobile {
+        display: none;
+      }
+    }
+    h1 {
+      z-index: 2;
+      transform: translateX(80px);
+      @include mobile {
+        transform: translateX(0);
+      }
+      &::after {
+        position: absolute;
+        content: '';
+        display: block;
+        width: 75px;
+        height: 4px;
+        background-color: $primary-color;
+        bottom: -10px;
+        @include mobile {
+          transform: translateX(-50%);
+          left: 50%;
+        }
+      }
+    }
+  }
   &__description {
     flex-wrap: wrap;
     max-width: 40vw;

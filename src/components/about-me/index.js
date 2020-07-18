@@ -1,6 +1,7 @@
 import React, { lazy } from 'react'
 import { withRouter } from 'react-router-dom'
 import config from 'config'
+import Path from 'assets/images/bg-path.png'
 
 import './index.scss'
 
@@ -23,6 +24,7 @@ const AboutMe = ({ history }) => {
   return (
     <div className='section about-me'>
       <div className='about-me__title'>
+        <img src={Path} />
         <h1>About Me</h1>
       </div>
       <div className='about-me__description'>
