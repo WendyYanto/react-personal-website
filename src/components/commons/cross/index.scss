@@ -1,0 +1,23 @@
+.cross {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  cursor: pointer;
+
+  &__bar {
+    height: 24px;
+    width: 2px;
+    box-sizing: border-box;
+    background-color: grey;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    &:first-child {
+      transform: rotate(45deg);
+    }
+    &:last-child {
+      transform: rotate(-45deg);
+    }
+  }
+}
