@@ -20,7 +20,6 @@ const Navbar = ({ isTablet }) => {
   }
 
   const handleToggle = () => {
-    console.log('Haha')
     setVisibleSidebar(!visibleSidebar)
   }
 
