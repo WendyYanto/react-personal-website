@@ -1,13 +1,14 @@
 @import 'assets/scss/_responsive.scss';
+@import 'assets/scss/_variables.scss';
 
 .navbar {
   display: flex;
   justify-content: space-between;
-  padding: 0 150px;
+  padding: 0 8vw;
   @include tablet {
     padding: 0 16px;
   }
-  &__title {
+  &__title , &__mobile {
     padding: 16px;
   }
   &__items {
@@ -19,6 +20,32 @@
     margin: 0;
     @include tablet {
       display: none;
+    }
+  }
+  &__mobile {
+    .sidebar {
+      position: fixed;
+      top: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      background-color: #fff;
+      z-index: 10;
+
+      .icon {
+        position: absolute;
+        top: 16px;
+        right: 16px;
+      }
+      
+      &__items {
+        padding: 16px;
+        list-style: none;
+        flex-direction: column;
+        display: flex;
+        justify-content: space-around;
+        vertical-align: middle;
+      }
     }
   }
 }

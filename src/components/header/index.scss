@@ -12,21 +12,31 @@ h1, p {
   align-items: center;
   justify-content: space-around;
   @include mobile {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
   &__description {
     text-align: left;
+    @include mobile {
+      text-align: center;
+    }
     h1 {
       font-size: 3rem;
       margin-bottom: 10px;
       font-weight: bolder;
-      @include mobile {
+      @include tablet {
         font-size: 2rem;
       }
     }
     p {
       margin-bottom: 30px;
       white-space: pre-line;
+    }
+  }
+  &__image {
+    img {
+      max-width: 35vw;
+      height: auto;
+      margin: 0 auto;
     }
   }
 }
