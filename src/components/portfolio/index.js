@@ -6,7 +6,7 @@ import './index.scss'
 const Button = lazy(() => import(/* webpackChunkName: "button" */'components/commons/button')) 
 const PortfolioItem = lazy(() => import(/* webpackChunkName: "portfolio-item" */'./portfolio-item')) 
 
-const PORTFOLIOS = config.portfolios
+const PORTFOLIOS = config.portfolios.reverse()
 
 const EXPAND = 'See more'
 const COLLAPSE = 'See less'
