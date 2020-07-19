@@ -12,7 +12,7 @@ const PortfolioItem = ({ item }) => {
   return (
     <div className='item'>
       <div className='item__icon'>
-        <img src={image} />
+        <img src={image} alt='platform'/>
       </div>
       <h4 className='item__title'>
         {item.title}

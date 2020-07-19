@@ -24,7 +24,7 @@ const AboutMe = ({ history }) => {
   return (
     <div className='section about-me'>
       <div className='about-me__title'>
-        <img src={Path} />
+        <img src={Path} alt='about-me-background'/>
         <h1>About Me</h1>
       </div>
       <div className='about-me__description'>
