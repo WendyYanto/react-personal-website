@@ -1,0 +1,2 @@
+(this["webpackJsonpmy-website"]=this["webpackJsonpmy-website"]||[]).push([[7],{51:function(e,a,r){"use strict";r.r(a);var t=r(0),s=r.n(t);r(52);a.default=function(e){var a=e.onClick;return s.a.createElement("div",{className:"hamburger",onClick:a},s.a.createElement("div",{className:"hamburger__bar"}),s.a.createElement("div",{className:"hamburger__bar"}),s.a.createElement("div",{className:"hamburger__bar"}))}},52:function(e,a,r){}}]);
+//# sourceMappingURL=hamburger.e2ebf455.chunk.js.map

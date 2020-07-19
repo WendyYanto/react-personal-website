@@ -1,0 +1,2 @@
+(this["webpackJsonpmy-website"]=this["webpackJsonpmy-website"]||[]).push([[2],{38:function(t,e,n){"use strict";n.r(e);var a=n(0),c=n.n(a),s=(n(56),function(t){var e=t.onClick,n=t.text,a=t.secondary,s="button ".concat(a?"secondary":"primary");return c.a.createElement("button",{className:s,onClick:e},n)});s.defaultProps={secondary:!1},e.default=s},56:function(t,e,n){}}]);
+//# sourceMappingURL=button.40ca53b4.chunk.js.map

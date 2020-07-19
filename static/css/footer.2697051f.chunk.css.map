@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.scss"],"names":[],"mappings":"AAEA,WAEI,eAAgB,CAChB,cAAe,CACf,aAAc","file":"footer.2697051f.chunk.css","sourcesContent":["@import 'assets/scss/_variables.scss';\n\n.contact {\n  p {\n    margin-top: 10px;\n    font-size: 12px;\n    color: #8A8FA3;\n  }\n}"]}

@@ -1,0 +1,2 @@
+(this["webpackJsonpmy-website"]=this["webpackJsonpmy-website"]||[]).push([[12],{49:function(e,t,c){"use strict";c.r(t);var n=c(0),s=c.n(n),a=c(13),i=c(1),o=c(15);c(50);t.default=Object(i.e)((function(e){var t=e.name,c=e.history,n=Object(a.a)().get("section")||"home",i=Object(o.a)(t),r=n===i?"active":"";return s.a.createElement("li",{className:r,onClick:function(){c.push({search:"section=".concat(i)})}},t)}))},50:function(e,t,c){}}]);
+//# sourceMappingURL=navbar-item.f86a7d33.chunk.js.map
