@@ -1,7 +1,6 @@
 import React, { lazy, useState } from 'react'
 import config from 'config'
 import withResponsive from 'hocs/with-responsive' 
-import { Link } from 'react-router-dom'
 import { bool } from 'prop-types'
 
 import './index.scss'

@@ -1,3 +1,9 @@
-.footer {
-  
+@import 'assets/scss/_variables.scss';
+
+.contact {
+  p {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #8A8FA3;
+  }
 }

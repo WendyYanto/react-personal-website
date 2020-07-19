@@ -6,12 +6,11 @@ export default {
     'About Me',
     'Education',
     'Portfolio',
-    'Experience',
     'Skills',
     'Contact',
   ],
   description:
-    'Hi, I’m Wendy. A Full-Stack Engineer (Android and Backend) who love beautiful crafted application. Currently, I’m working at here.com. I’m very passionate learning more about android and backend technology. If you have something cool about that, I’m very open to discuss it with you.',
+    'Hi, I’m Wendy. A Full-Stack Engineer who love beautiful crafted application. I’m very passionate learning more about android and backend technology. If you have something cool about that, I’m very open to discuss it with you.',
   educations: [
     {
       agency: 'BINUS University',
