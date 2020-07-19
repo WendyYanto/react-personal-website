@@ -8,9 +8,11 @@
   @include tablet {
     padding: 0 16px;
   }
-  &__title , &__mobile {
+  &__title {
     padding: 16px;
+    margin-top: -6px;
   }
+  
   &__items {
     list-style: none;
     display: flex;
@@ -23,6 +25,8 @@
     }
   }
   &__mobile {
+    padding: 16px;
+    
     .sidebar {
       position: fixed;
       top: 0;
@@ -37,7 +41,7 @@
         top: 16px;
         right: 16px;
       }
-      
+
       &__items {
         padding: 16px;
         list-style: none;

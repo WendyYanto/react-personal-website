@@ -9,6 +9,7 @@ import './index.scss'
 const NavbarItem = lazy(() => import(/* webpackChunkName: "navbar-item" */'./navbar-item'))
 const Hamburger = lazy(() => import(/* webpackChunkName: "hamburger" */'components/commons/hamburger'))
 const Cross = lazy(() => import(/* webpackChunkName: "cross" */'components/commons/cross'))
+const Logo = lazy(() => import(/* webpackChunkName: "logo" */'components/commons/logo'))
 
 const ITEMS = config.navbar_items
 
@@ -27,7 +28,7 @@ const Navbar = ({ isTablet }) => {
   return (
     <div className='navbar home'>
       <div className='navbar__title'>
-        <Link to='/'>Logo</Link>
+        <Logo />
       </div>
       {!isTablet && 
         <ul className='navbar__items'>

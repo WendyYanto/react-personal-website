@@ -7,6 +7,7 @@ import ProfileImage from 'assets/images/bg-header.png'
 import './index.scss'
 
 const Button = lazy(() => import(/* webpackChunkName: "button" */'components/commons/button'))
+
 const USERNAME = config.username
 const ROLE = config.role
 
