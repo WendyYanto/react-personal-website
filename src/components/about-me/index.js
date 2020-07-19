@@ -1,5 +1,5 @@
 import React, { lazy } from 'react'
-import { withRouter } from 'react-router-dom'
+import { useHistory } from 'react-router-dom'
 import config from 'config'
 import Path from 'assets/images/bg-path.png'
 
@@ -8,7 +8,10 @@ import './index.scss'
 const Button = lazy(() => import(/* webpackChunkName: "button" */'components/commons/button')) 
 const DESCRIPTION = config.description
 
-const AboutMe = ({ history }) => {
+const AboutMe = () => {
+
+  const history = useHistory()
+
   const goToPortfolio = () => {
     history.push({
       search: `section=portfolio`,
@@ -38,4 +41,4 @@ const AboutMe = ({ history }) => {
   )
 }
 
-export default withRouter(AboutMe)
+export default AboutMe

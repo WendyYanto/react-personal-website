@@ -1,12 +1,15 @@
 import React from 'react'
 import { string } from 'prop-types'
 import { useQuery } from 'hooks'
-import { withRouter } from 'react-router-dom'
+import { useHistory } from 'react-router-dom'
 import { formatToKebabCase } from 'utils'
 import './index.scss'
 
-const NavbarItem = ({ name, history }) => {
+const NavbarItem = ({ name }) => {
+  
   const query = useQuery()
+  const history = useHistory()
+
   const sectionQuery = query.get('section') || 'home'
   const section = formatToKebabCase(name)
   const activeClass = sectionQuery === section ? 'active' : ''
@@ -28,4 +31,4 @@ NavbarItem.propTypes = {
   name: string
 }
 
-export default withRouter(NavbarItem)
+export default NavbarItem

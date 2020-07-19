@@ -1,6 +1,6 @@
 import React, { lazy } from 'react'
 import config from 'config'
-import { withRouter } from 'react-router-dom'
+import { useHistory } from 'react-router-dom'
 
 import ProfileImage from 'assets/images/bg-header.png'
 
@@ -11,7 +11,10 @@ const Button = lazy(() => import(/* webpackChunkName: "button" */'components/com
 const USERNAME = config.username
 const ROLE = config.role
 
-const Header = ({ history }) => {
+const Header = () => {
+
+  const history = useHistory()
+
   const goToContact = () => {
     history.push({
       search: `section=contact`,
@@ -32,4 +35,4 @@ const Header = ({ history }) => {
   )
 }
 
-export default withRouter(Header)
+export default Header
