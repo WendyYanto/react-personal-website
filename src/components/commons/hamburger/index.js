@@ -1,4 +1,5 @@
 import React from 'react'
+import { func } from 'prop-types'
 
 import './index.scss'
 
@@ -10,6 +11,10 @@ const Hamburger = ({ onClick }) => {
       <div className='hamburger__bar' />
     </div>
   )
+}
+
+Hamburger.propTypes = {
+  onClick: func
 }
 
 export default Hamburger

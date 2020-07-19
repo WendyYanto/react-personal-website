@@ -6,9 +6,11 @@ const withResponsive = (Component) => (props) => {
   const isTablet = useMediaQuery({ maxWidth: 768 })
 
   return (
-    <Component {...props} 
+    <Component
+      {...props} 
       isMobile={isMobile} 
-      isTablet={isTablet} />
+      isTablet={isTablet}
+    />
   )
 }
 

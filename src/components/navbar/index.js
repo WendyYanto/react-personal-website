@@ -2,6 +2,7 @@ import React, { lazy, useState } from 'react'
 import config from 'config'
 import withResponsive from 'hocs/with-responsive' 
 import { Link } from 'react-router-dom'
+import { bool } from 'prop-types'
 
 import './index.scss'
 
@@ -30,9 +31,8 @@ const Navbar = ({ isTablet }) => {
       </div>
       {!isTablet && 
         <ul className='navbar__items'>
-        {renderItems()}
-        </ul>
-      }
+          {renderItems()}
+        </ul>}
       {isTablet && 
         <div className='navbar__mobile'>
           <div className='icon'>
@@ -46,12 +46,14 @@ const Navbar = ({ isTablet }) => {
               <ul className='sidebar__items' onClick={handleToggle}>
                 {renderItems()}
               </ul>
-            </div>
-          }
-        </div>
-      }
+            </div>}
+        </div>}
     </div>
   )
+}
+
+Navbar.propTypes = {
+  isTablet: bool
 }
 
 export default withResponsive(Navbar)
