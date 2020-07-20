@@ -25,7 +25,7 @@
     h1 {
       z-index: 2;
       transform: translateX(80px);
-      @include mobile {
+      @include tablet {
         transform: translateX(0);
       }
       &::after {
