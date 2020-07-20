@@ -9,7 +9,7 @@ const Footer = () => {
     <div className='section contact'>
       <Logo />
       <p>
-      Copyright &copy; 2020 Wendy Yanto
+        Copyright &copy; 2020 Wendy Yanto
       </p>
     </div>
   )
