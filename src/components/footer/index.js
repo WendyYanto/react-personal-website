@@ -9,6 +9,9 @@ const Footer = () => {
     <div className='section contact'>
       <Logo />
       <p>
+        <i class="fa fa-envelope"></i>&nbsp;&nbsp;yanto.wendy98@gmail.com  
+      </p>
+      <p>
         Copyright &copy; 2020 Wendy Yanto
       </p>
     </div>
