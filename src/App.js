@@ -21,7 +21,11 @@ const App = () => {
 
   useEffect(() => {
     if (!ref) return
-    window.scrollTo(0, ref.offsetTop)
+    window.scrollTo({
+      left: 0,
+      top:  ref.offsetTop,
+      behavior: 'smooth'
+    })
   }, [ref])
 
   return (
