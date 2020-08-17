@@ -23,6 +23,15 @@ const Footer = () => {
       <p>
         Copyright &copy; 2020 Wendy Yanto
       </p>
+      <p className='contact__designer-info'>
+        Designed by&nbsp;
+        <a 
+          href="https://www.behance.net/cellinetannial"
+          rel='noreferrer noopener'
+          target="_blank">
+          <u>Celline T</u>
+        </a>
+      </p>
     </div>
   )
 }
