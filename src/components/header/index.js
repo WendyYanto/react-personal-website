@@ -2,7 +2,7 @@ import React, { lazy } from 'react'
 import config from 'config'
 import { useHistory } from 'react-router-dom'
 
-import ProfileImage from 'assets/images/bg-header.png'
+import ProfileImage from 'assets/images/wendyyanto.png'
 
 import './index.scss'
 

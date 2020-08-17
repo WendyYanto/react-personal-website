@@ -34,9 +34,14 @@ h1, p {
   }
   &__image {
     img {
-      max-width: 35vw;
+      max-width: 28vw;
       height: auto;
       margin: 0 auto;
+      border-radius: 50%;
+      border: 3.5vw solid #d2f1fe;
+      @include mobile {
+        max-width: 35vw;
+      }
     }
   }
 }

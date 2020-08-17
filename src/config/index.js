@@ -73,6 +73,12 @@ export default {
       year: '2020',
       platform: 'MOBILE',
       description: 'An interceptor that implements mock API response for android to increase android developer productivity during sprint development'
+    },
+    {
+      title: 'Android Lazy Load Component',
+      year: '2020',
+      platform: 'MOBILE',
+      description: 'A component to help lazy load any view component (using layout resource ID). It inflate the layout when it is shown in the viewport seen by user'
     }
   ],
   skills: [
