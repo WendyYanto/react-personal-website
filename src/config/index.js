@@ -1,6 +1,6 @@
 export default {
   username: 'Wendy Yanto',
-  role: 'Android & Full Stack \n Developer',
+  role: 'Software Engineer',
   navbar_items: [
     'Home',
     'About Me',
@@ -10,7 +10,7 @@ export default {
     'Contact',
   ],
   description:
-    'Hi, I’m Wendy. A Full-Stack Engineer who love beautiful crafted application. I’m very passionate learning more about android and backend technology. If you have something cool about that, I’m very open to discuss it with you.',
+    'Hi, I’m Wendy. A full-stack software engineer who love beautiful crafted application. I’m very passionate exploring more about android and backend technology. If you have something cool about that, I’m very open to discuss it with you.',
   educations: [
     {
       agency: 'BINUS University',
@@ -95,12 +95,20 @@ export default {
       value: '85'
     },
     {
-      title: 'Vue',
+      title: 'Vue.js',
       value: '85'
     },
     {
       title: 'Spring',
       value: '85'
+    },
+    {
+      title: 'Laravel',
+      value: '80'
+    },
+    {
+      title: 'React.js',
+      value: '75'
     },
     {
       title: 'Python',
