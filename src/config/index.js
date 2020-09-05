@@ -108,7 +108,7 @@ export default {
     },
     {
       title: 'React.js',
-      value: '80'
+      value: '75'
     },
     {
       title: 'Python',
