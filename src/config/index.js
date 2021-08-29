@@ -10,7 +10,7 @@ export default {
     'Contact',
   ],
   description:
-    'Hi, I’m Wendy. A full-stack software engineer who love beautiful crafted application. I’m very passionate exploring more about android and backend technology. If you have something cool about that, I’m very open to discuss it with you.',
+    'Hi, I’m Wendy. A full-stack software engineer who love beautiful crafted application. I\'m currently working at Blibli, one of the largest e-commerce startup at Indonesia. I’m very passionate exploring more about android and backend technology. If you have something cool about that, I’m very open to discuss it with you.',
   educations: [
     {
       agency: 'BINUS University',
@@ -79,7 +79,13 @@ export default {
       year: '2020',
       platform: 'MOBILE',
       description: 'A component to help lazy load any view component (using layout resource ID). It inflate the layout when it is shown in the viewport seen by user'
-    }
+    },
+    {
+      title: 'Best Presentation Award at Blibli Hackathon',
+      platform: 'WEB',
+      year: '2021',
+      description: 'Created and developed ideas to promote better gifting experience application using Vue 3 and firebase'
+    },
   ],
   skills: [
     {
