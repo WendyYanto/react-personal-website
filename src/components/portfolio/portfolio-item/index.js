@@ -1,8 +1,8 @@
 import React from 'react'
 import { object } from 'prop-types'
 
-import WEB from 'assets/icon/web.png'
-import MOBILE from 'assets/icon/mobile.png'
+import WEB from 'assets/icon/WEB.png'
+import MOBILE from 'assets/icon/MOBILE.png'
 
 import './index.scss'
 

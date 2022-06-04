@@ -1,5 +1,5 @@
 export default {
-  username: 'Wendy Yanto',
+  username: 'Wendy Yanto (Wenn)',
   role: 'Software Engineer',
   navbar_items: [
     'Home',
@@ -10,10 +10,10 @@ export default {
     'Contact',
   ],
   description:
-    'Hi, I’m Wendy. A full-stack software engineer who love beautiful crafted application. I\'m currently working at Blibli, one of the largest e-commerce startup at Indonesia. I’m very passionate exploring more about android and backend technology. If you have something cool about that, I’m very open to discuss it with you.',
+    'Hi, I’m Wendy Yanto. You may address me also as Wenn. I\'m currently working as Software Engineer (Android). I’m very interested in exploring more about android and backend technology. If you have something cool about that, I’m very open to discuss it with you.',
   educations: [
     {
-      agency: 'BINUS University',
+      agency: 'BINUS University (Jakarta)',
       duration: '2016-2020',
       major: 'Computer Science - Artificial Intelligence',
       notes: 'GPA: 3.86',
@@ -90,35 +90,43 @@ export default {
   skills: [
     {
       title: 'Android',
-      value: '85'
+      value: '85',
+      level: 'proficient'
     },
     {
       title: 'Java',
-      value: '85'
+      value: '85',
+      level: 'proficient'
     },
     {
       title: 'Kotlin',
-      value: '85'
+      value: '85',
+      level: 'proficient'
+    },
+    {
+      title: 'Gradle',
+      value: '75',
+      level: 'intermediate'
     },
     {
       title: 'Vue.js',
-      value: '85'
-    },
-    {
-      title: 'Spring',
-      value: '85'
-    },
-    {
-      title: 'Laravel',
-      value: '80'
+      value: '85',
+      level: 'proficient'
     },
     {
       title: 'React.js',
-      value: '75'
+      value: '75',
+      level: 'intermediate'
     },
     {
-      title: 'Python',
-      value: '75'
+      title: 'Java Spring',
+      value: '80',
+      level: 'intermediate'
+    },
+    {
+      title: 'Laravel',
+      value: '80',
+      level: 'intermediate'
     }
   ]
 }

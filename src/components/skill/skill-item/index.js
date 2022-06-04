@@ -8,7 +8,7 @@ const SkillItem = ({ item }) => {
     <div className='skill-item'>
       <div className='skill-item__title'>
         <span>{item.title}</span>
-        <span>{item.value}%</span>
+        <span>{item.level}</span>
       </div>
       <div className='skill-item__bar'>
         <div className='content' style={{width: `${item.value}%`}} />

@@ -18,12 +18,6 @@ const AboutMe = () => {
     })
   }
 
-  const downloadCV = () => {
-    history.push({
-      search: `section=contact`,
-    })
-  }
-
   return (
     <div className='section about-me'>
       <div className='about-me__title'>
@@ -34,7 +28,6 @@ const AboutMe = () => {
         <p>{DESCRIPTION}</p>
         <div className='description-action'>
           <Button text='View Works' onClick={goToPortfolio} />
-          <Button text='Download CV' secondary onClick={downloadCV} />
         </div>
       </div>
     </div>
