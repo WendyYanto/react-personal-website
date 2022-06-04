@@ -15,7 +15,7 @@ jobs:
       run : |
           echo "[LOG] Cloning react-personal-website"
           git clone https://github.com/WendyYanto/react-personal-website.git
-          echo "[LOG] npm run install"
+          echo "[LOG] npm install"
           npm run install
           echo "[LOG] npm run build"
           npm run build
