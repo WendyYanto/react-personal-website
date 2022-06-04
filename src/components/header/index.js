@@ -24,7 +24,7 @@ const Header = () => {
   return (
     <div className='section header'>
       <div className='header__description'>
-        <h1>I'm {USERNAME}-TEST</h1>
+        <h1>I'm {USERNAME}</h1>
         <p>{ROLE}</p>
         <Button text='Contact Me' onClick={goToContact} />
       </div>
