@@ -1,0 +1,2 @@
+(this["webpackJsonpmy-website"]=this["webpackJsonpmy-website"]||[]).push([[9],{37:function(e,n,t){"use strict";t.r(n);var s=t(0),a=t.n(s);t(55);n.default=function(e){var n=e.onClick;return a.a.createElement("div",{className:"logo",onClick:n},a.a.createElement("strong",null,"W"))}},55:function(e,n,t){}}]);
+//# sourceMappingURL=logo.4b2b8c7c.chunk.js.map

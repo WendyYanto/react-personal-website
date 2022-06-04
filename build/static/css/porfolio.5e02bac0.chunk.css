@@ -1,0 +1,2 @@
+.portfolio{min-height:70vh;display:flex;flex-direction:column;justify-content:center}.portfolio__title{margin-top:50px;position:relative}.portfolio__title:after{position:absolute;content:"";display:block;width:75px;height:4px;background-color:#59bbe9;bottom:-10px;transform:translateX(-50%);left:50%}.portfolio__items{display:flex;justify-content:space-around;align-items:flex-start;align-content:flex-start;flex-wrap:wrap;min-height:200px;margin:40px 0}
+/*# sourceMappingURL=porfolio.5e02bac0.chunk.css.map */

@@ -1,0 +1,2 @@
+.cross{width:24px;height:24px;position:relative;cursor:pointer}.cross__bar{height:24px;width:2px;box-sizing:border-box;background-color:grey;position:absolute;top:0;left:0}.cross__bar:first-child{transform:rotate(45deg)}.cross__bar:last-child{transform:rotate(-45deg)}
+/*# sourceMappingURL=cross.6588f0cc.chunk.css.map */

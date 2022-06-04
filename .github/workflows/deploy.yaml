@@ -13,14 +13,6 @@ jobs:
         token: ${{ secrets.TOKEN }}
     - name: Deploy
       run : |
-          echo "[LOG] Cloning react-personal-website"
-          git clone https://github.com/WendyYanto/react-personal-website.git website
-          echo "[LOG] cd website"
-          cd website
-          echo "[LOG] npm install"
-          npm install
-          echo "[LOG] npm run build"
-          npm run build
           echo "[LOG] Cloning wendyyanto.github.io"
           git clone https://github.com/WendyYanto/wendyyanto.github.io.git temp
           echo "[LOG] Copying all build files and folders to temp"
